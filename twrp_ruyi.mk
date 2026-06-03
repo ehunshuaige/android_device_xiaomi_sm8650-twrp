@@ -20,7 +20,7 @@ DEVICE_PATH := device/xiaomi/sm8650
 $(call inherit-product, $(DEVICE_PATH)/device.mk)
 
 # dependencies
-PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/xiaomi/sm8650/prebuilts/ruyi,recovery/root/vendor)
+# PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,device/xiaomi/sm8650/prebuilts/ruyi,recovery/root/vendor)
 
 # Release name
 PRODUCT_RELEASE_NAME := ruyi
