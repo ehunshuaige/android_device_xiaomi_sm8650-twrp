@@ -34,7 +34,7 @@ LOCAL_MODULE := goodix_cap.ko
 LOCAL_SRC_FILES := prebuilts/ruyi/lib/modules/goodix_cap.ko
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT_RECOVERY)/vendor/lib/modules
-LOCAL_MODULE_SUFFIX := .ko
+# LOCAL_MODULE_SUFFIX removed to avoid .ko.ko duplication
 LOCAL_STRIP_MODULE := false
 include $(BUILD_PREBUILT)
 
@@ -44,7 +44,7 @@ LOCAL_MODULE := goodix_core.ko
 LOCAL_SRC_FILES := prebuilts/ruyi/lib/modules/goodix_core.ko
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT_RECOVERY)/vendor/lib/modules
-LOCAL_MODULE_SUFFIX := .ko
+# LOCAL_MODULE_SUFFIX removed
 LOCAL_STRIP_MODULE := false
 include $(BUILD_PREBUILT)
 
@@ -54,7 +54,7 @@ LOCAL_MODULE := synaptics_tcm2.ko
 LOCAL_SRC_FILES := prebuilts/ruyi/lib/modules/synaptics_tcm2.ko
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT_RECOVERY)/vendor/lib/modules
-LOCAL_MODULE_SUFFIX := .ko
+# LOCAL_MODULE_SUFFIX removed
 LOCAL_STRIP_MODULE := false
 include $(BUILD_PREBUILT)
 
@@ -64,7 +64,7 @@ LOCAL_MODULE := xiaomi_touch.ko
 LOCAL_SRC_FILES := prebuilts/ruyi/lib/modules/xiaomi_touch.ko
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := $(TARGET_OUT_RECOVERY)/vendor/lib/modules
-LOCAL_MODULE_SUFFIX := .ko
+# LOCAL_MODULE_SUFFIX removed
 LOCAL_STRIP_MODULE := false
 include $(BUILD_PREBUILT)
 
