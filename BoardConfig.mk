@@ -17,6 +17,9 @@
 # Building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
+# Disable ELF check for recovery (allow copying kernel modules via PRODUCT_COPY_FILES)
+DISABLE_ELF_CHECK := true
+
 # A/B
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
 AB_OTA_UPDATER := true
@@ -151,9 +154,3 @@ TW_HAS_EDL_MODE := true
 TW_USE_SERIALNO_PROPERTY_FOR_DEVICE_ID := true
 TW_BACKUP_EXCLUSIONS := /data/fonts
 TW_DEVICE_VERSION := made_by_GitFASTBOOT
-
-TARGET_RECOVERY_DEVICE_MODULES += \
-    goodix_cap.ko \
-    goodix_core.ko \
-    synaptics_tcm2.ko \
-    xiaomi_touch.ko
