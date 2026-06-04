@@ -17,8 +17,8 @@
 # Building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
-# Disable ELF check for recovery (allow copying kernel modules via PRODUCT_COPY_FILES)
-DISABLE_ELF_CHECK := true
+# Allow copying ELF files (kernel modules) via PRODUCT_COPY_FILES without error
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # A/B
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := false
